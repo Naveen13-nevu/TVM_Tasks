@@ -55,4 +55,21 @@
 // console.log(gen.next());
 // console.log(gen.next());
 
+// prototype samples 
+
+function User(name) {
+    this.name = name;
+}
+
+User.prototype.showDetails = function(){
+console.log(this.name);
+
+}
+
+
+let user1 = new User("Naveen");
+let user2 = new User("Praveen");
+
+user1.showDetails();
+user2.showDetails();
 
