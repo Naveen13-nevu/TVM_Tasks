@@ -43,16 +43,16 @@
 
 // Generators
 
-function* greet(){
-    yield 10;
-    yield 20;
-    yield 30;
-}
+// function* greet(){
+//     yield 10;
+//     yield 20;
+//     yield 30;
+// }
 
-let gen = greet();
-console.log(gen.next());
-console.log(gen.next());
-console.log(gen.next());
-console.log(gen.next());
+// let gen = greet();
+// console.log(gen.next());
+// console.log(gen.next());
+// console.log(gen.next());
+// console.log(gen.next());
 
 

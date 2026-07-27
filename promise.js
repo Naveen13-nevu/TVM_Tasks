@@ -54,41 +54,43 @@
 //     }
 // })
 
-// console.log("Program Starts");
-
 // let a = setInterval(()=>{
 //     console.log("Interval");
     
 // },1000);
 // clearInterval(a);
 
-// setTimeout(()=>{
-//     console.log("waiting.....");
+
+console.log("Program Starts");
+
+
+setTimeout(()=>{
+    console.log("waiting.....");
     
-// },2000)
+},2000)
 
-// let prop = new Promise((resolve, reject) =>{
-//     let vaild = true;
+let prop = new Promise((resolve, reject) =>{
+    let vaild = true;
 
-//     if(vaild){
-//         resolve("Resolved")
+    if(vaild){
+        resolve("Resolved")
         
-//     }
-//     else{
-//         reject("rejected")
+    }
+    else{
+        reject("rejected")
         
-//     }
-// })
-// prop.then((data)=>{
-//     console.log(data);
+    }
+})
+prop.then((data)=>{
+    console.log(data);
     
-// })
-// .catch((error) =>{
-//     console.log(error);
+})
+.catch((error) =>{
+    console.log(error);
     
-// });
+});
 
-// console.log("Ends");
+console.log("Ends");
 
 // let p2 = new Promise( resolve => setTimeout(()=>{
 //     resolve("first")
@@ -104,34 +106,34 @@
 // .then(result => console.log(result)
 // );
 
-function Register(){
-    return new Promise(resolve => {
-        setTimeout(()=>{
-            resolve("Register")
-        },1000)
-    })
-}
-function login(){
-    return new Promise(resolve => {
-        setTimeout(()=>{
-            resolve("Login")
-        },1000)
-    })
-}
-function dashboard(){
-    return new Promise(resolve => {
-        setTimeout(()=>{
-            resolve("Dashboard")
-        },1000)
-    })
-}
-function task(){
-    return new Promise(resolve => {
-        setTimeout(()=>{
-            resolve("Task")
-        },1000)
-    })
-}
+// function Register(){
+//     return new Promise(resolve => {
+//         setTimeout(()=>{
+//             resolve("Register")
+//         },1000)
+//     })
+// }
+// function login(){
+//     return new Promise(resolve => {
+//         setTimeout(()=>{
+//             resolve("Login")
+//         },1000)
+//     })
+// }
+// function dashboard(){
+//     return new Promise(resolve => {
+//         setTimeout(()=>{
+//             resolve("Dashboard")
+//         },1000)
+//     })
+// }
+// function task(){
+//     return new Promise(resolve => {
+//         setTimeout(()=>{
+//             resolve("Task")
+//         },1000)
+//     })
+// }
 
 
 
@@ -162,34 +164,34 @@ function task(){
 
 // app();
 
-function app(){
+// function app(){
 
  
 
-        Register().then((registerResult) =>{
-            console.log(registerResult)
-            return login();
+//         Register().then((registerResult) =>{
+//             console.log(registerResult)
+//             return login();
             
-        })
+//         })
         
-        .then((LoginResult) =>{
-            console.log(LoginResult);
-            return dashboard();
+//         .then((LoginResult) =>{
+//             console.log(LoginResult);
+//             return dashboard();
             
-        })
+//         })
         
-        .then((DashboardResult) =>{
-            console.log(DashboardResult);
-            return task();
+//         .then((DashboardResult) =>{
+//             console.log(DashboardResult);
+//             return task();
             
-        })
+//         })
         
-        .then((TaskResult) => { 
-            console.log(TaskResult);
-            console.log("All task completed ");
+//         .then((TaskResult) => { 
+//             console.log(TaskResult);
+//             console.log("All task completed ");
             
             
-        })
+//         })
         
-    }
-    app();
+//     }
+//     app();
